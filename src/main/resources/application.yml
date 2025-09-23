@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: society-finance
+
+#  data:
+#    mongodb:
+#      uri: mongodb://localhost:27017/society_finance
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
+  endpoint:
+    health:
+      show-details: always   # show MongoDB health status in detail
